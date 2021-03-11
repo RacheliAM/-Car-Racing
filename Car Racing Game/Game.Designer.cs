@@ -106,16 +106,16 @@
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Location = new System.Drawing.Point(-3, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(19, 451);
+            this.pictureBox5.Size = new System.Drawing.Size(10, 451);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Location = new System.Drawing.Point(360, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(369, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 451);
+            this.pictureBox6.Size = new System.Drawing.Size(14, 451);
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             // 

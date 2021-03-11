@@ -26,14 +26,14 @@ namespace Car_Racing_Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            moveLine(gameSpead);
-            enemy(gameSpead);
+            MoveLine(gameSpead);
+            Enemy(gameSpead);
             gameOver();
-            coins(gameSpead);
-            coinsCollection();
+            Coins(gameSpead);
+            CoinsCollection();
 
         }
-        private void moveLine(int speed)
+        private void MoveLine(int speed)
         {
             if (pictureBox1.Top >= 500)
             { pictureBox1.Top = 0; }
@@ -51,7 +51,7 @@ namespace Car_Racing_Game
             { pictureBox4.Top = 0; }
             else { pictureBox4.Top += speed; }
         }
-        private void enemy(int speed)
+        private void Enemy(int speed)
         {
             if (enemy1.Top >= 500)
             {
@@ -84,7 +84,7 @@ namespace Car_Racing_Game
             }
 
         }
-        private void coins(int speed)
+        private void Coins(int speed)
         {
             if (coin1.Top >= 500)
             {
@@ -186,7 +186,7 @@ namespace Car_Racing_Game
 
             }
         }
-        private void coinsCollection()
+        private void CoinsCollection()
         {
             if (car.Bounds.IntersectsWith(coin1.Bounds))
             {
@@ -220,11 +220,11 @@ namespace Car_Racing_Game
                 coin4.Location = new Point(x, 0);
             }
         }
-        private void exitGame_Click(object sender, EventArgs e)
+        private void ExitGame_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void newGame_Click(object sender, EventArgs e)
+        private void NewGame_Click(object sender, EventArgs e)
         {
             gameSpead = 0;
             collectCoins = 0;
