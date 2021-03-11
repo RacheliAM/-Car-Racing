@@ -77,9 +77,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(175, 89);
+            this.pictureBox2.Location = new System.Drawing.Point(175, 72);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(10, 114);
+            this.pictureBox2.Size = new System.Drawing.Size(10, 131);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -95,9 +95,9 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Location = new System.Drawing.Point(175, 433);
+            this.pictureBox4.Location = new System.Drawing.Point(175, 407);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(10, 96);
+            this.pictureBox4.Size = new System.Drawing.Size(10, 122);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
@@ -130,7 +130,7 @@
             this.car.Image = ((System.Drawing.Image)(resources.GetObject("car.Image")));
             this.car.Location = new System.Drawing.Point(105, 343);
             this.car.Name = "car";
-            this.car.Size = new System.Drawing.Size(53, 71);
+            this.car.Size = new System.Drawing.Size(46, 58);
             this.car.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.car.TabIndex = 6;
             this.car.TabStop = false;
@@ -140,7 +140,7 @@
             this.enemy2.Image = ((System.Drawing.Image)(resources.GetObject("enemy2.Image")));
             this.enemy2.Location = new System.Drawing.Point(300, 126);
             this.enemy2.Name = "enemy2";
-            this.enemy2.Size = new System.Drawing.Size(39, 59);
+            this.enemy2.Size = new System.Drawing.Size(33, 56);
             this.enemy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemy2.TabIndex = 7;
             this.enemy2.TabStop = false;
@@ -150,7 +150,7 @@
             this.enemy1.Image = ((System.Drawing.Image)(resources.GetObject("enemy1.Image")));
             this.enemy1.Location = new System.Drawing.Point(95, 51);
             this.enemy1.Name = "enemy1";
-            this.enemy1.Size = new System.Drawing.Size(39, 59);
+            this.enemy1.Size = new System.Drawing.Size(35, 54);
             this.enemy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemy1.TabIndex = 8;
             this.enemy1.TabStop = false;
@@ -160,7 +160,7 @@
             this.enemy3.Image = ((System.Drawing.Image)(resources.GetObject("enemy3.Image")));
             this.enemy3.Location = new System.Drawing.Point(213, 267);
             this.enemy3.Name = "enemy3";
-            this.enemy3.Size = new System.Drawing.Size(39, 59);
+            this.enemy3.Size = new System.Drawing.Size(40, 54);
             this.enemy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemy3.TabIndex = 9;
             this.enemy3.TabStop = false;
@@ -239,7 +239,7 @@
             this.newGame.TabIndex = 16;
             this.newGame.Text = "New Game";
             this.newGame.UseVisualStyleBackColor = false;
-            this.newGame.Click += new System.EventHandler(this.newGame_Click);
+            this.newGame.Click += new System.EventHandler(this.NewGame_Click);
             // 
             // exitGame
             // 
@@ -252,7 +252,7 @@
             this.exitGame.TabIndex = 17;
             this.exitGame.Text = "Exit";
             this.exitGame.UseVisualStyleBackColor = false;
-            this.exitGame.Click += new System.EventHandler(this.exitGame_Click);
+            this.exitGame.Click += new System.EventHandler(this.ExitGame_Click);
             // 
             // Game
             // 

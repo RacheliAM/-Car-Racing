@@ -12,8 +12,8 @@ namespace Car_Racing_Game
 {
     public partial class Game : Form
     {
-        Random r = new Random();
-        int x;
+        Random randomLocation = new Random();
+        int newPoint;
         int gameSpead = 0;
         int collectCoins = 0;
         public Game()
@@ -35,7 +35,7 @@ namespace Car_Racing_Game
         }
         private void MoveLine(int speed)
         {
-            if (pictureBox1.Top >= 500)
+            if (pictureBox1.Top >= 500) //if line in in the end start from the biginning
             { pictureBox1.Top = 0; }
             else { pictureBox1.Top += speed; }
 
@@ -53,10 +53,11 @@ namespace Car_Racing_Game
         }
         private void Enemy(int speed)
         {
-            if (enemy1.Top >= 500)
+           
+            if (enemy1.Top >= 500) //new location for enemy
             {
-                x = r.Next(0, 200);
-                enemy1.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                enemy1.Location = new Point(newPoint, 0);
             }
             else
             {
@@ -65,8 +66,8 @@ namespace Car_Racing_Game
 
             if (enemy2.Top >= 500)
             {
-                x = r.Next(0, 300);
-                enemy2.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 300);
+                enemy2.Location = new Point(newPoint, 0);
             }
             else
             {
@@ -75,8 +76,8 @@ namespace Car_Racing_Game
 
             if (enemy3.Top >= 500)
             {
-                x = r.Next(0, 300);
-                enemy3.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 300);
+                enemy3.Location = new Point(newPoint, 0);
             }
             else
             {
@@ -88,8 +89,8 @@ namespace Car_Racing_Game
         {
             if (coin1.Top >= 500)
             {
-                x = r.Next(0, 200);
-                coin1.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin1.Location = new Point(newPoint, 0);
             }
             else
             {
@@ -98,8 +99,8 @@ namespace Car_Racing_Game
 
             if (coin2.Top >= 500)
             {
-                x = r.Next(0, 200);
-                coin2.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin2.Location = new Point(newPoint, 0);
             }
             else
             {
@@ -108,8 +109,8 @@ namespace Car_Racing_Game
 
             if (coin3.Top >= 500)
             {
-                x = r.Next(0, 200);
-                coin3.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin3.Location = new Point(newPoint, 0);
             }
             else
             {
@@ -118,8 +119,8 @@ namespace Car_Racing_Game
 
             if (coin4.Top >= 500)
             {
-                x = r.Next(0, 200);
-                coin4.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin4.Location = new Point(newPoint, 0);
             }
             else
             {
@@ -192,32 +193,32 @@ namespace Car_Racing_Game
             {
                 collectCoins++;
                 Coinslabel.Text = "Coins = " + collectCoins.ToString();
-                x = r.Next(0, 200);
-                coin1.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin1.Location = new Point(newPoint, 0);
             }
 
             if (car.Bounds.IntersectsWith(coin2.Bounds))
             {
                 collectCoins++;
                 Coinslabel.Text = "Coins = " + collectCoins.ToString();
-                x = r.Next(0, 200);
-                coin2.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin2.Location = new Point(newPoint, 0);
             }
 
             if (car.Bounds.IntersectsWith(coin3.Bounds))
             {
                 collectCoins++;
                 Coinslabel.Text = "Coins = " + collectCoins.ToString();
-                x = r.Next(0, 200);
-                coin3.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin3.Location = new Point(newPoint, 0);
             }
 
             if (car.Bounds.IntersectsWith(coin4.Bounds))
             {
                 collectCoins++;
                 Coinslabel.Text = "Coins = " + collectCoins.ToString();
-                x = r.Next(0, 200);
-                coin4.Location = new Point(x, 0);
+                newPoint = randomLocation.Next(0, 200);
+                coin4.Location = new Point(newPoint, 0);
             }
         }
         private void ExitGame_Click(object sender, EventArgs e)
